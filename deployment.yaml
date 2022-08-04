@@ -3,23 +3,23 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: flaskdemo
-  name: flaskdemo
+    app: sfg-web
+  name: sfg-web
 spec:
   replicas: 4
   selector:
     matchLabels:
-      app: flaskdemo
+      app: sfg-web
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: flaskdemo
+        app: sfg-web
     spec:
       containers:
         - image: democlouddevops/sfga-web:13
-          name: flaskdemo
+          name: sfg-web
           resources: {}
 status: {}
 ---
