@@ -18,7 +18,7 @@ spec:
         app: sfg-web
     spec:
       containers:
-        - image: democlouddevops/sfga-web:13
+        - image: democlouddevops/sfga-web:14
           name: sfg-web
           resources: {}
 status: {}
