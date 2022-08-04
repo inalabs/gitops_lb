@@ -6,7 +6,7 @@ metadata:
     app: flaskdemo
   name: flaskdemo
 spec:
-  replicas: 2
+  replicas: 4
   selector:
     matchLabels:
       app: flaskdemo
@@ -18,7 +18,7 @@ spec:
         app: flaskdemo
     spec:
       containers:
-        - image: democlouddevops/sfga-web:12
+        - image: democlouddevops/sfga-web:11
           name: flaskdemo
           resources: {}
 status: {}
